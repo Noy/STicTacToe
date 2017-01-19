@@ -87,7 +87,7 @@ class TGame {
     "IN_GAME"
   }
 
-  // This method makes the actual board
-  def make(): Unit = { ticTacToeUI.foreach { row => println("" + row(0) + " | " + row(1) + " | " + row(2)) }
+    // This method makes the actual board
+    def make(): Unit = { ticTacToeUI.foreach { row => println("" + row(0) + " | " + row(1) + " | " + row(2)) }
   }
 }
