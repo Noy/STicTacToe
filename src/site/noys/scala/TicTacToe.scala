@@ -1,5 +1,6 @@
 package site.noys.scala
 
+
 import scala.util.Random
 
 /**
@@ -21,6 +22,8 @@ object TicTacToe {
         ticTacToe.make()
         // Print who's turn it is
         println("It is " + ticTacToe.player + "'s turn.")
+        // Wait a second.
+        Thread.sleep(1000)
         // Set our session variable to check if it is an active session
         var activeSession = false
         do {
@@ -41,6 +44,8 @@ object TicTacToe {
   def main(args: Array[String]): Unit = {
     // Call our play method
     this.play()
+    // Call the make method which essentially draws our board
+    ticTacToe.make()
     // At the end of all our loops, we print out the winner, that's what this is.
     println(ticTacToe.gameStatus)
   }
